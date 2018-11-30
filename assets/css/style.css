@@ -1,0 +1,126 @@
+
+.content {
+    margin: auto;
+    background: url("../images/morocco/morocco/morocco.png");
+    max-width: 960px;
+    font-family: 'Lato', sans-serif;
+}
+.top {
+    width:100%;
+    background: white;
+    border: solid 1px #cccccc;
+}
+
+.container {
+    margin-top: 40px;
+    padding: 20px;
+    padding-bottom: 50px;
+    background: white;
+}
+.page {
+    color: #4aaaa5;
+    
+}
+
+.name {
+    float: left; 
+    color: white;
+    padding: 30px 20px 30px 20px;
+    background: #4aaaa5;
+    margin: 0 auto;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: white;
+    overflow: hidden;
+    border: solid 1px #cccccc;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    color: #777777;
+    text-align: center;
+    padding: 14px 16px 5px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-top: 58px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+    position: sticky;
+}
+
+
+
+placeholder {
+    color: #cccccc;
+}
+
+#submit {
+    background: #4aaaa5;
+    width: 100px;
+    padding: 15px;
+}
+
+input {
+    border: solid 1px #cccccc;
+    width: 95%;
+    padding: 8px;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+h3 {
+    background-color:#4aaaa5;
+    text-align: center;
+    width: 150px;
+}
+
+#trivia {
+    margin: 0 auto;
+}
+
+.left h3 {
+    position: relative;
+    bottom: 110px;
+}
+
+.right h3 {
+    position: relative;
+    bottom: 110px;
+}
+
+
+
+footer {
+    border-top: 8px solid #4aaaa5;
+    background: #666666;
+    height: 50px;
+    margin-top: -50px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+}

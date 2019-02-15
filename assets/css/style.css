@@ -1,5 +1,6 @@
 body {
     max-width:  960px;
+    position: relative;
 }
 
 .text {
@@ -15,8 +16,7 @@ body {
     background: white;
 }
 
-.container {
-    margin-top: 40px;
+.container {    
     padding: 20px;
     padding-bottom: 50px;
     background: rgba(0,0,0,.6);
@@ -45,8 +45,9 @@ body {
     text-align: center;
     padding: 14px 16px 5px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
     margin-top: 58px;
+    margin-bottom: 5px;
 }
 
 /* Change the color of links on hover */
@@ -61,7 +62,6 @@ body {
     color: white;
     position: sticky;
 }
-
 
 
 placeholder {
@@ -84,45 +84,18 @@ input[type=text]:focus {
     border: 3px solid #555;
 }
 
-.left {
-    float: left;
+
+.wow {
+    margin: 0 20px;
 }
-
-.right {
-    float: right;
-}
-
-h3 {
-    background-color:#43C1E9;
-    text-align: center;
-    width: 150px;
-}
-
-#trivia {
-    margin: 0 auto;
-}
-
-.left h3 {
-    position: relative;
-    bottom: 110px;
-}
-
-.right h3 {
-    position: relative;
-    bottom: 110px;
-}
-
-
 
 footer {
-    max-width: 960px;
-    border-top: 8px solid #43C1E9;
-    background: rgba(0,0,0,.6);
-    height: 50px;
+    clear: both;
     position: absolute; 
     text-align: center; 
     bottom: 0;
     width: 100%;
+    max-width: 960px;
 }
 
 @media screen and (max-width: 960px) {

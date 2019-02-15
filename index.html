@@ -1,29 +1,165 @@
 <!DOCTYPE html>
-<html id=>
-    <head>
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-        <title>Gerson's Portfolio</title>
-    </head>
-    
-    <body class="content">
-        <div id="top">
-           <div class="topnav"> 
-                <h1 class="name">Gerson Cruz</h1>
-                <a href="index.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="semantic/out/semantic.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <title>Gerson's Portfolio</title>
+</head>
+
+<body class="content">
+    <div id="top">
+        <div class="topnav">
+            <h1 class="name">Gerson Cruz</h1>
+            <a href="index.html">
+                <i class="github icon"></i>
+            </a>
+            <a href="portfolio.html">
+                <i class="linkedin icon"></i>
+            </a>
+            <a href="contact.html">
+                <i class="envelope outline icon"></i>
+            </a>
+            <a href="contact.html">
+                <i class="phone icon"></i>
+            </a>
             </nav>
         </div>
 
-        <div class="container">
-            <h1 class="page"> About Me</h1>
-            <img src="data:image/png;base64,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" align="left" hspace="50px" vspace="25px">
-            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam, est non lobortis dapibus, arcu tellus imperdiet leo, ut finibus eros metus et dui. Curabitur ornare rhoncus ex, sit amet mattis est congue ut. Quisque dui ex, efficitur sed volutpat sed, aliquet nec magna. In hac habitasse platea dictumst. Ut at enim nisl. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam non felis felis. Sed fringilla est non dignissim laoreet. Quisque porttitor magna at lobortis dignissim. Quisque interdum magna eu lectus pulvinar, eu finibus orci elementum. Donec sed quam orci. Ut sagittis sollicitudin dolor, quis sagittis ex ultrices quis. Aliquam mollis erat eget ligula pellentesque, sit amet consectetur dui viverra.</span> 
-            <p>Donec mauris libero, porttitor sit amet blandit ut, porta sit amet nisl. Vivamus sit amet lobortis ligula, ut finibus elit. In vel ante at sem gravida viverra. Suspendisse massa ante, volutpat et tortor nec, finibus vehicula dui. Phasellus varius ante a tellus lacinia semper sit amet quis ante. Cras vitae tincidunt odio. Nulla mollis ultricies massa, ultrices finibus quam auctor at. Quisque at viverra tellus. Aenean eu tortor at tortor gravida aliquam. Integer a mi dictum, blandit mi at, dapibus neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam erat volutpat. Curabitur aliquam tellus sit amet tortor faucibus dapibus. Etiam nisi nibh, mollis sed auctor at, volutpat ut elit.</p>
-        </div>
-    </body>
+        <div class="ui styled fluid accordion">
+            <div class="active title">
+                <span class="ui centered grid wow" style="font-size: 24px; margin: 10px">About Gerson</span>
+            </div>
+            <div class="active content">
+                <div class="container">
+                    <h1 class="page"> About Me</h1>
+                    <img src="data:image/png;base64,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"
+                        align="left" hspace="50px" vspace="25px">
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam, est non lobortis dapibus, arcu
+                        tellus imperdiet leo, ut finibus eros metus et dui. Curabitur ornare rhoncus ex, sit amet mattis
+                        est congue ut. Quisque dui ex, efficitur sed volutpat sed, aliquet nec magna. In hac habitasse platea
+                        dictumst. Ut at enim nisl. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam non
+                        felis felis. Sed fringilla est non dignissim laoreet. Quisque porttitor magna at lobortis dignissim.
+                        Quisque interdum magna eu lectus pulvinar, eu finibus orci elementum. Donec sed quam orci. Ut sagittis
+                        sollicitudin dolor, quis sagittis ex ultrices quis. Aliquam mollis erat eget ligula pellentesque,
+                        sit amet consectetur dui viverra.
+                    </span>
+                    <p>Donec mauris libero, porttitor sit amet blandit ut, porta sit amet nisl. Vivamus sit amet lobortis ligula,
+                        ut finibus elit. In vel ante at sem gravida viverra. Suspendisse massa ante, volutpat et tortor nec,
+                        finibus vehicula dui. Phasellus varius ante a tellus lacinia semper sit amet quis ante. Cras vitae
+                        tincidunt odio. Nulla mollis ultricies massa, ultrices finibus quam auctor at. Quisque at viverra
+                        tellus. Aenean eu tortor at tortor gravida aliquam. Integer a mi dictum, blandit mi at, dapibus neque.
+                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam erat
+                        volutpat. Curabitur aliquam tellus sit amet tortor faucibus dapibus. Etiam nisi nibh, mollis sed
+                        auctor at, volutpat ut elit.</p>
+                </div>
+            </div>
+            <div class="title">
+                <span class="ui centered grid wow" style="font-size: 24px; margin: 10px">Portfolio/LinkedIn</span>
+            </div>
+            <div class="content">
+                <div class="container">
+                    <h1 class="page"> Portfolio/h1>
+                        <div class="left">
+                            <div id="hang">
+                                <img src="https://www.sightwordsgame.com/wp-content/uploads/2011/11/Hangman.jpg" width="150px" height="150px">
+                                <h3>Hangman</h3>
+                            </div>
 
-    <footer class="footer">
-        copyright
-    </footer>
+                            <div id="rpg">
+                                <img src="https://static.gamespot.com/uploads/scale_super/1552/15524586/3397567-e3logo-generic-thumb1.jpg" width="150px"
+                                    height="150px">
+                                <h3>RPG Game</h3>
+                            </div>
+
+                            <div id="trivia">
+                                <img src="http://rivista-cdn.hourdetroit.com/Hour-Detroit/March-2018/Test-Your-Knowledge-at-These-Trivia-Nights-in-Metro-Detroit/Trivial%20Pursuit.jpg"
+                                    width="150px" height="150px">
+                                <h3>Trivia Game</h3>
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <div id="rutger">
+                                <img src="http://icons.iconarchive.com/icons/untergunter/leaf-mimes/512/opera-widget-icon.png" width="150px" height="150px">
+                                <h3>Rutger Info Widget</h3>
+                            </div>
+
+                            <div id="rock">
+                                <img src="https://www.esquireme.com/sites/default/files/styles/full_img/public/images/2017/05/29/rock_paper_scissors__2x.png?itok=jFv2T0kr"
+                                    width="150px" height="150px">
+                                <h3>Rock Paper Scissors</h3>
+                            </div>
+                        </div>
+                        <div class="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="dark"
+                            data-vanity="gerson-cruz-11719316a">
+                            <a class="LI-simple-link" href='https://www.linkedin.com/in/gerson-cruz-11719316a?trk=profile-badge'>Gerson Cruz</a>
+                        </div>
+                </div>
+            </div>
+            <div class="title">
+                <span class="ui centered grid wow" style="font-size: 24px; margin: 10px">Contact</span>
+            </div>
+            <div class="content">
+                <div class="container">
+                    <h1 class="page">Contact</h1>
+                    <form>
+                        <h4>Name</h4>
+                        <input type="text" name="name" placeholder="Full Name">
+                        <h4>Email</h4>
+                        <input type="text" name="email" placeholder="example@gmail.com">
+                        <h4>Message</h4>
+                        <input type="text" placeholder="" style="height:200px;">
+                        <br>
+                        <br>
+                        <input id="submit" type="submit" value="Submit" onclik="lacation.href='mailto:gersoncruz91@gmail.com'">
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    <script src="assets/Javascript/app.js"></script>
+    <script src="semantic/out/semantic.js"></script>
+</body>
+<footer>
+    <div class="yo">
+        <div class="ui inverted vertical footer segment">
+            <div class="ui container">
+                <div class="ui stackable inverted divided equal height stackable grid">
+                    <div class="three wide column">
+                        <h4 class="ui inverted header">
+                            <div class="ui inverted link list">
+                                <a href="#" class="item"></a>
+                            </div>
+                        </h4>
+                    </div>
+                    <div class="three wide column">
+                        <h4 class="ui inverted header">
+                            <div class="ui inverted link list">
+                                <a href="#" class="item"></a>
+                            </div>
+                        </h4>
+                    </div>
+                    <div class="three wide column">
+                        <h4 class="ui inverted header">
+                            <div class="ui inverted link list">
+                                <a href="#" class="item"></a>
+                            </div>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+</footer>
+
+
 </html>

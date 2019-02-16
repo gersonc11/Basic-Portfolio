@@ -1,6 +1,7 @@
 $(document).ready(function () {
     $('.ui.accordion').accordion();
-    function once(fn, context) {
+    
+    let once = (fn, context) => {
         var result;
         return function () {
             if (fn) {
@@ -10,6 +11,8 @@ $(document).ready(function () {
             return result;
         };
     }
+
+
     $('.call').hover(once(function () {
         $(this).append("<p>469-247-5313</p>")
     }))
@@ -17,6 +20,6 @@ $(document).ready(function () {
         $(this).append("<p>gersoncruz91@gmail.com</p>")
     }))
     $('.page').hover(function() {
-        
+
     })
 });

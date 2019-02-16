@@ -1,3 +1,7 @@
+.linkedSquare {
+    float: right;   
+}
+
 body {
     max-width:  960px;
     position: relative;

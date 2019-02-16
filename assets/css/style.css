@@ -1,6 +1,4 @@
-.linkedSquare {
-    float: right;   
-}
+
 
 body {
     max-width:  960px;
@@ -20,11 +18,7 @@ body {
     background: white;
 }
 
-.container {    
-    padding: 20px;
-    padding-bottom: 50px;
-    background: rgba(0,0,0,.6);
-}
+
 .page {
     color: #43C1E9;
     
@@ -67,6 +61,15 @@ body {
     position: sticky;
 }
 
+.linkedSquare {
+    float: right;   
+}
+
+.mainHeader {
+    font-size: 24px!important;
+    margin: 10px!important;
+    
+}
 
 placeholder {
     color: #cccccc;

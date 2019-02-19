@@ -59,6 +59,14 @@ body {
     color: white;
     position: sticky;
 }
+#about {
+    min-height: 250px;
+}
+
+#me {
+    max-height: 200px;
+    transform: rotateZ(90deg)
+}
 
 #summary {
     margin: 50px;

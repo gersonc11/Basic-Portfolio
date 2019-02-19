@@ -97,6 +97,10 @@ body {
     float: right;
 }
 
+#resumeImg {
+    min-height: 341px;
+}
+
 .mainHeader {
     font-size: 24px!important;
     margin: 10px!important;

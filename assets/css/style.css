@@ -60,6 +60,10 @@ body {
     position: sticky;
 }
 
+#summary {
+    margin: 50px;
+}
+
 #projectscreen {
     min-height: 800px;
 }
@@ -120,8 +124,11 @@ body {
 }
 
 @media screen and (max-width: 690px) {
-    
+   
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 321px) {
+     .content {
+        min-height: 500px;
+    }
 }

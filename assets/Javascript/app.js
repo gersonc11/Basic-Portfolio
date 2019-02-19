@@ -1,48 +1,54 @@
 $(document).ready(function () {
 
-      // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyDB8adcifVgeemcIx93qI3kk_mQWGRhmnw",
-    authDomain: "portfolio-e76ef.firebaseapp.com",
-    databaseURL: "https://portfolio-e76ef.firebaseio.com",
-    projectId: "portfolio-e76ef",
-    storageBucket: "portfolio-e76ef.appspot.com",
-    messagingSenderId: "895600960467"
-  };
-  firebase.initializeApp(config);
-  
-  var dataBase = firebase.database();
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDB8adcifVgeemcIx93qI3kk_mQWGRhmnw",
+        authDomain: "portfolio-e76ef.firebaseapp.com",
+        databaseURL: "https://portfolio-e76ef.firebaseio.com",
+        projectId: "portfolio-e76ef",
+        storageBucket: "portfolio-e76ef.appspot.com",
+        messagingSenderId: "895600960467"
+    };
+    firebase.initializeApp(config);
 
-  $("#send").on("click",  () => {
-    event.preventDefault();
-    // Grabs user input
-    var name = $("#name").val().trim();
-    var email = $("#email").val().trim();
-    var message = $("#message").val().trim();
+    var dataBase = firebase.database();
 
 
-    dataBase.ref().push({
-        name: name,
-        email: email,
-        message: message
+
+    $("#send").on("click", () => {
+        event.preventDefault();
+        // Grabs user input
+        var name = $("#name").val().trim();
+        var email = $("#email").val().trim();
+        var message = $("#message").val().trim();
+
+
+        dataBase.ref().push({
+            name: name,
+            email: email,
+            message: message
+        })
+
+        alert("Thanks for reaching out. I will get back to you as soon as I can.")
+
+
+        // Clears all of the text-boxes
+        $("#name").val("");
+        $("#email").val("");
+        $("#message").val("");
+    });
+
+    $('#clear').on("click", () => {
+        $("#name").val("");
+        $("#email").val("");
+        $("#message").val("");
     })
 
-
-
-
-    // Clears all of the text-boxes
-    $("#name").val("");
-    $("#email").val("");
-    $("#message").val("");
-});
-
-$('#clear').on("click", () => {
-    $("#name").val("");
-    $("#email").val("");
-    $("#message").val("");
-})
-
-
+    $("#contact-form").keyup(function (event) {
+        if (event.keyCode === 13) {
+            $("#send").click();
+        }
+    });
 
     $('.ui.accordion').accordion();
 
@@ -65,7 +71,7 @@ $('#clear').on("click", () => {
         $(this).append("<p>gersoncruz91@gmail.com</p>")
     }))
 
- 
+
 
 
 });

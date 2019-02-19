@@ -36,6 +36,12 @@ $(document).ready(function () {
     $("#message").val("");
 });
 
+$('#clear').on("click", () => {
+    $("#name").val("");
+    $("#email").val("");
+    $("#message").val("");
+})
+
 
 
     $('.ui.accordion').accordion();

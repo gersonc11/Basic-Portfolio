@@ -3,6 +3,7 @@
 body {
     max-width:  960px;
     position: relative;
+    margin: 0;
 }
 
 .text {
@@ -12,7 +13,7 @@ body {
 .content {
     margin: auto;
     background: url('http://www.teamopenoffice.org/pimages/1/15856/water-live-wallpaper.jpg');
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', Garamond;
 }
 
 .top {
@@ -28,11 +29,9 @@ body {
 .name {
     float: left; 
     color: #43C1E9;
-    padding: 30px 20px 30px 20px;
-    margin: 0 auto;
 }
 
-/* Add a black background color to the top navigation */
+
 .topnav {
     overflow: hidden;
     }
@@ -45,7 +44,6 @@ body {
     padding: 14px 16px 5px;
     text-decoration: none;
     font-size: 20px;
-    margin-top: 58px;
     margin-bottom: 5px;
 }
 
@@ -72,7 +70,7 @@ body {
 
 .projects {
     max-height: 200px;
-    min-width: 300px;
+    min-width: 400px;
 }
 .projectCard {
     max-width: 400px;   
@@ -82,18 +80,12 @@ body {
     min-height: 85px;  
 }
 
+.projectLink {
+    color: black;
+}
+
 #trivia {
     float: right;
-}
-
-#train {
-    min-width: 200px;
-    min-height: 100px;
-}
-
-#rain {
-    float: right;
-    min-width: 400px;
 }
 
 .mainHeader {
@@ -102,34 +94,10 @@ body {
     
 }
 
-placeholder {
-    color: #cccccc;
-}
-
-#submit {
-    background: #43C1E9;
-    width: 100px;
-    padding: 15px;
-}
-
-input {
-    border: solid 1px #cccccc;
-    width: 95%;
-    padding: 8px;
-}
-
-input[type=text]:focus {
-    border: 3px solid #555;
-}
 
 
-footer {
-    clear: both;
-    position: absolute; 
-    text-align: center; 
-    bottom: 0;
-    width: 100%;
-    max-width: 960px;
+@media screen and (max-width: 1200px) {
+
 }
 
 @media screen and (max-width: 960px) {
@@ -138,10 +106,9 @@ footer {
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 690px) {
     
 }
 
-@media screen and (max-width: 640px) {
-    position: static;
+@media screen and (max-width: 460px) {
 }

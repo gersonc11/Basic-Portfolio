@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="semantic/out/semantic.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
     <title>Gerson's Portfolio</title>
 </head>
 
@@ -29,7 +30,7 @@
         </div>
 
         <div class="ui styled fluid accordion">
-            <div class="active title">
+            <div class="title">
                 <span class="ui centered grid mainHeader">About Gerson</span>
             </div>
             <div class="content">
@@ -55,8 +56,8 @@
                         auctor at, volutpat ut elit.</p>
                 </div>
             </div>
-            <div class="title">
-                <span class="ui centered grid mainHeader">Portfolio/LinkedIn</span>
+            <div class="active title">
+                <span class="ui centered grid mainHeader">Portfolio/Resume</span>
             </div>
             <div class="active content" id="projectscreen">
                 <div class="container">
@@ -68,18 +69,24 @@
                                         <img class="projects" src="assets/images/trivia.png">
                                     </div>
                                     <div class="content">
-                                            <div class="header"><h4>Javascript Trivia</h4></div>
-                                            <div class="description">
+                                        <div class="header">
+                                            <h4>Javascript Trivia</h4>
+                                        </div>
+                                        <div class="description">
                                             A Javascript Trivia game created using HTML5/CSS3 and Jquery.
                                         </div>
                                     </div>
                                     <div class="ui two bottom attached buttons">
                                         <div class="ui button">
-                                            <i class="github icon"></i>
-                                            GitHub Repo
+                                            <a href="https://github.com/gersonc11/JavascriptTrivia">
+                                                <span class="projectLink"><i class="github icon"></i>
+                                                GitHub Repo</span>
+                                            </a>
                                         </div>
                                         <div class="ui primary button">
-                                            Website
+                                            <a href="https://gersonc11.github.io/JavascriptTrivia/">
+                                                <span class="projectLink">Website</span>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -87,24 +94,31 @@
 
 
                             <div id="train">
-                                
+
                                 <div class="projectCard">
                                     <div class="image">
                                         <img class="projects" src="assets/images/train.png">
                                     </div>
                                     <div class="content">
-                                        <div class="header"><h4>Train Schedule</h4></div>
+                                        <div class="header">
+                                            <h4>Train Schedule</h4>
+                                        </div>
                                         <div class="description">
-                                            Train schedule application using Moment.js to track time and keep up with the current time. Created with Bootstrap and Jquery for front end and Firebase for a realtime database.
+                                            Train schedule application using Moment.js to track time and keep up with the current time. Created with Bootstrap and Jquery
+                                            for front end and Firebase for a realtime database.
                                         </div>
                                     </div>
                                     <div class="ui two bottom attached buttons">
                                         <div class="ui button">
-                                            <i class="github icon"></i>
-                                            Github Repo
+                                            <a href="https://github.com/gersonc11/TrainSchedule">
+                                                <span class="projectLink"><i class="github icon"></i>
+                                                GitHub Repo</span>
+                                            </a>
                                         </div>
                                         <div class="ui primary button">
-                                            Website
+                                            <a href="https://gersonc11.github.io/TrainSchedule/">
+                                                <span class="projectLink">Website</span>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -113,32 +127,32 @@
                         <div class="row">
                             <div id="rain">
                                 <div class="projectCard">
-                                        <div class="image">
-                                            <img class="projects" src="assets/images/rainplay.png">
+                                    <div class="image">
+                                        <img class="projects" src="assets/images/rainplay.png">
+                                    </div>
+                                    <div class="content">
+                                        <div class="header">
+                                            <h4>RainPlay</h4>
                                         </div>
-                                        <div class="content">
-                                            <div class="header"><h4>RainPlay</h4></div>
-                                            <div class="description">
-                                                A web that generates a playlist based on the weather in a chosen or current location. Bootstrap was used for the front end. For the backend the OpenWeatherMap API and the Spotify Api were used, as well as JQuery for DOM manipulation and Node.js to create authorization tokens.
-                                            </div>
-                                        </div>
-                                        <div class="ui two bottom attached buttons">
-                                            <div class="ui button">
-                                                <i class="github icon"></i>
-                                                Github Repo
-                                            </div>
-                                            <div class="ui primary button">
-                                                Website
-                                            </div>
+                                        <div class="description">
+                                            A web that generates a playlist based on the weather in a chosen or current location. Bootstrap was used for the front end.
+                                            For the backend the OpenWeatherMap API and the Spotify Api were used, as well
+                                            as JQuery for DOM manipulation and Node.js to create authorization tokens.
                                         </div>
                                     </div>
-                            </div>
-                            <div class="linkedSquare">
-                                <div class="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="dark"
-                                    data-vanity="gerson-cruz-11719316a">
-                                    <p>
-                                        <a class="LI-simple-link linkedSquare" href='https://www.linkedin.com/in/gerson-cruz-11719316a?trk=profile-badge'>Gerson Cruz</a>
-                                    </p>
+                                    <div class="ui two bottom attached buttons">
+                                        <div class="ui button">
+                                            <a href="https://github.com/gersonc11/RainPlay">
+                                                <span class="projectLink"><i class="github icon"></i>
+                                                GitHub Repo</span>
+                                            </a>
+                                        </div>
+                                        <div class="ui primary button">
+                                            <a href=https://alxcur.github.io/project-1/>
+                                                <span class="projectLink">Website</span>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -154,61 +168,38 @@
             </div>
             <div class="content">
                 <div>
-                    <form>
-                        <h4>Name</h4>
-                        <input type="text" name="name" placeholder="Full Name">
-                        <h4>Email</h4>
-                        <input type="text" name="email" placeholder="example@gmail.com">
-                        <h4>Message</h4>
-                        <input type="text" placeholder="" style="height:200px;">
-                        <br>
-                        <br>
-                        <input id="submit" type="submit" value="Submit" onclick="lacation.href='mailto:gersoncruz91@gmail.com'">
-
-                    </form>
+                    <form class="ui form" id="contact-form">
+                        <div class="required field">
+                            <label>Name</label>
+                            <input placeholder="Full Name" name="name" type="text" id="name">
+                        </div>
+                        <div class="required field">
+                            <label>Email</label>
+                            <input placeholder="Email" name="email" type="text" id="email">
+                        </div>
+                        <div class="required field" class="message">
+                            <label>Message</label>
+                            <textarea placeholder="Message" name="message" type="text" id="message"></textarea>
+                        </div>
                 </div>
+                <div class="ui primary submit button" id="send">Submit</div>
+                <div class="ui clear button">Clear</div>
+                </form>
             </div>
         </div>
     </div>
+    </div>
 
 
     </div>
     </div>
+
+
+    <p style="display: none;">copyright Gerson Cruz 2019</p>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
     <script src="assets/Javascript/app.js"></script>
     <script src="semantic/out/semantic.js"></script>
 </body>
-<footer>
-    <div class="yo">
-        <div class="ui inverted vertical footer segment">
-            <div class="ui container">
-                <div class="ui stackable inverted divided equal height stackable grid">
-                    <div class="three wide column">
-                        <h4 class="ui inverted header">
-                            <div class="ui inverted link list">
-                                <a href="#" class="item"></a>
-                            </div>
-                        </h4>
-                    </div>
-                    <div class="three wide column">
-                        <h4 class="ui inverted header">
-                            <div class="ui inverted link list">
-                                <a href="#" class="item"></a>
-                            </div>
-                        </h4>
-                    </div>
-                    <div class="three wide column">
-                        <h4 class="ui inverted header">
-                            <div class="ui inverted link list">
-                                <a href="#" class="item"></a>
-                            </div>
-                        </h4>
-                    </div>
-                </div>
-            </div>
-
-</footer>
-
 
 </html>

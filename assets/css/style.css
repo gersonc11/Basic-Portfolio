@@ -63,7 +63,7 @@ body {
 }
 
 #projectscreen {
-    min-height: 500px;
+    min-height: 800px;
 }
 
 .container {
@@ -72,11 +72,16 @@ body {
 
 .projects {
     max-height: 200px;
+    min-width: 300px;
+}
+.projectCard {
+    max-width: 400px;   
 }
 
-#train:hover, #trivia:hover {
-    transform: scale(1.5);
+.description {
+    min-height: 85px;  
 }
+
 #trivia {
     float: right;
 }
@@ -86,7 +91,9 @@ body {
     min-height: 100px;
 }
 
-.linkedSquare {
+#rain {
+    float: right;
+    min-width: 400px;
 }
 
 .mainHeader {
